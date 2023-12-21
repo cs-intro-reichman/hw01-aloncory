@@ -8,11 +8,9 @@ public class Triangle {
 		int a = Integer.parseInt(args[0]);
 		int b = Integer.parseInt(args[1]);
 		int c = Integer.parseInt(args[2]);
-		boolean isTriangle = false;
+		boolean isTriangle;
 		// Tests if three given integers form a triangle accroding to Triangle Inequality Theorem.
-		if((a > 0) && (b > 0) && (c > 0) && (a < b + c) && (b < a + c) && (c < a + b)){
-			isTriangle = true;
-		} 
+		isTriangle = ((a > 0) && (b > 0) && (c > 0) && (a < b + c) && (b < a + c) && (c < a + b));
 		System.out.println(a + ", " + b + ", " + c + ": " + isTriangle);
 	}
 }
